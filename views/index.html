@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>[introduce]</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<meta name="keywords" content="无人机, 航拍, 无人机航拍, 航拍作品, 航拍视频, 航拍社区, 航拍网站, GDU生活">
+	<meta name="description" content="在GDU生活你可以观赏到全球各地优秀的航拍作品，同时也可以认识到来自各地的航拍爱好者。航拍作品交流、分享航拍攻略、心得相互交流，在GDU生活打造一片属于你自己的航拍小天地。">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div id="content">
+{% include './template/header.html' %}
+<div class="swiper-container" id="swiper">
+    <div class="swiper-wrapper"style="background-image: url(http://image.prodrone-tech.com/gdulife/banner4.jpg); width: 375px;" data-swiper-slide-index="3"></div>
+	        <div class="swiper-slide swiper-slide-prev" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner1.jpg); width: 375px;" data-swiper-slide-index="0">
+	        	<ul class="first-infor">
+	        		<li class="join-gdu">加入GDU+</li>
+	        		<li class="new-world">成为新世界的探险家</li>
+	        		<li class="start">全新的视觉盛宴 即将为你开启</li>
+	        	</ul>
+	        </div>
+	        <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner2.jpg); width: 375px;" data-swiper-slide-index="1"></div>
+	        <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner3.jpg); width: 375px;" data-swiper-slide-index="2"></div>
+	        <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner4.jpg); width: 375px;" data-swiper-slide-index="3"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<h3 class="title">
+  <img class="rect" src="/static/gdu_mobile/dist/image/rect.png">
+  <span class="officel">官方视频</span>
+  <a href="{:url('/gduweb/index/videos')}">
+    <span class="to-more">更多</span>
+    <img class="more" src="/static/gdu_mobile/dist/image/more.png">
+  </a>
+</h3>
+<ul class="video-information">	
+				
+    <a href="/gduweb/index/detail/1/15">
+      <li class="video-detail" style="background-image: url(http://image.prodrone-tech.com/gdulife/authority/activity3.jpg);">
+          <img class="play" src="/static/gdu_mobile/dist/image/play.png">
+          <dl>
+            <dt>无人机烟火表演</dt>
+            <dd>246</dd>
+          </dl>
+      </li>
+    </a>
+      
+    <a href="/gduweb/index/detail/1/14">
+      <li class="video-detail" style="background-image: url(http://image.prodrone-tech.com/gdulife/authority/activity2.jpg);">
+          <img class="play" src="/static/gdu_mobile/dist/image/play.png">
+          <dl>
+            <dt>七夕飞手特辑</dt>
+            <dd>209</dd>
+          </dl>
+      </li>
+    </a>
+      
+    <a href="/gduweb/index/detail/1/13">
+      <li class="video-detail" style="background-image: url(http://image.prodrone-tech.com/gdulife/authority/activity1.jpg);">
+          <img class="play" src="/static/gdu_mobile/dist/image/play.png">
+          <dl>
+            <dt>妇女节特辑</dt>
+            <dd>55</dd>
+          </dl>
+      </li>
+    </a>
+    </ul>
+<h3 class="title polite">
+  <img class="rect" src="/static/gdu_mobile/dist/image/rect.png">
+  <span class="officel">飞行员说</span>
+  <a href="{:url('/gduweb/index/articles')}">
+    <span class="to-more">更多</span>
+    <img class="more" src="/static/gdu_mobile/dist/image/more.png">
+  </a>
+</h3>
+<ul class="article-information">
+    <li class="article-detail">
+  <a href="/gduweb/index/detail/2/9">
+    <dl>
+      <dd class="detail">
+        <p>一旦穿上战衣，他们就是全世界最帅的存在</p>
+        <div>
+          <span class="gdu">GDU原创</span>
+          <span class="view-times">189</span>
+        </div>
+      </dd>
+      <dt class="article-picture" style="background-image: url(http://ohdqe117o.bkt.clouddn.com/gdulife/article/9/1.png);"></dt>
+    </dl>
+  </a>
+</li>
+    <li class="article-detail">
+  <a href="/gduweb/index/detail/2/8">
+    <dl>
+      <dd class="detail">
+        <p>每个人心里都有一座兰屿</p>
+        <div>
+          <span class="gdu">GDU原创</span>
+          <span class="view-times">151</span>
+        </div>
+      </dd>
+      <dt class="article-picture" style="background-image: url(http://ohdqe117o.bkt.clouddn.com/gdulife/article/8/1.png);"></dt>
+    </dl>
+  </a>
+</li>
+    <li class="article-detail">
+  <a href="/gduweb/index/detail/2/7">
+    <dl>
+      <dd class="detail">
+        <p>原来科技也能如此性感</p>
+        <div>
+          <span class="gdu">GDU原创</span>
+          <span class="view-times">89</span>
+        </div>
+      </dd>
+      <dt class="article-picture" style="background-image: url(http://ohdqe117o.bkt.clouddn.com/gdulife/article/7/1.png);"></dt>
+    </dl>
+  </a>
+</li>
+    <li class="article-detail">
+  <a href="/gduweb/index/detail/2/6">
+    <dl>
+      <dd class="detail">
+        <p>飞行员说|LEVI——我终其一生都会做一个讲故事的人</p>
+        <div>
+          <span class="gdu">GDU原创</span>
+          <span class="view-times">66</span>
+        </div>
+      </dd>
+      <dt class="article-picture" style="background-image: url(http://ohdqe117o.bkt.clouddn.com/gdulife/article/6/1.png);"></dt>
+    </dl>
+  </a>
+</li>
+    <li class="article-detail">
+  <a href="/gduweb/index/detail/2/5">
+    <dl>
+      <dd class="detail">
+        <p>飞手中的“老司机”才深有体会的“应急策略”</p>
+        <div>
+          <span class="gdu">GDU原创</span>
+          <span class="view-times">20</span>
+        </div>
+      </dd>
+      <dt class="article-picture" style="background-image: url(http://ohdqe117o.bkt.clouddn.com/gdulife/article/5/1.png);"></dt>
+    </dl>
+  </a>
+</li>
+</ul>
+<div class="mask-layer" id="mask"></div>
+</div>
+<script type="text/javascript" src="/static/gdu_mobile/dist/swiper/swiper.min.js"></script>
+<script>    
+var content = $_id("#content"),
+  nav = $_id("#nav"),
+  mask = $_id("#mask"),
+  swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      loop: true,    //循环播放
+      speed: 300,
+      autoplay: 4000,
+      autoplayDisableOnInteraction : false, 
+  });
+function $_id(dom){
+  return document.querySelector(dom);
+}
+function tapBarSwitch(){
+  if( /show/.test(content.className) ){
+    content.className = "";
+  }else{
+    content.className = "show";
+  }
+}
+nav.addEventListener("click",tapBarSwitch,false); 
+mask.addEventListener("click",tapBarSwitch,false); 
+// document.querySelector(".first-infor").className = "first-infor";  
+</script>
+</body>
+</html>
+{% include './template/footer.html' %}

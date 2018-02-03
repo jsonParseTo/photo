@@ -1,0 +1,26 @@
+{% include './template/header.html' %}
+<form action="">
+    <p>
+        <label for="">登录</label>
+        <input type="text" id="name">
+    </p>
+    <p>
+        <label for="">注册</label>
+        <input type="text" id="pwd">
+    </p>
+    <button id="btn">注册</button>
+</form>
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+   $("#btn").on('click', (e) => {
+        var name = $("#name").val().trim()
+        var age = $("#pwd").val().trim()
+        e.preventDefault();
+        $.post('/doRegister', {name: name, age: age}, (res) => {
+            console.log(res)
+        })
+   })
+})
+</script>
+{% include './template/footer.html' %}

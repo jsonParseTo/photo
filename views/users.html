@@ -1,0 +1,7 @@
+{% include './template/header.html' %}
+  <ul>
+    {% for list in lists %}
+      <li>{{list.toUpperCase()}}</li>
+    {% endfor %}
+  </ul>
+{% include './template/footer.html' %}
