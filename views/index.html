@@ -7,38 +7,37 @@
 	<meta name="renderer" content="webkit">
 	<meta name="keywords" content="无人机, 航拍, 无人机航拍, 航拍作品, 航拍视频, 航拍社区, 航拍网站, GDU生活">
 	<meta name="description" content="在GDU生活你可以观赏到全球各地优秀的航拍作品，同时也可以认识到来自各地的航拍爱好者。航拍作品交流、分享航拍攻略、心得相互交流，在GDU生活打造一片属于你自己的航拍小天地。">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/index.css">
 </head>
 <body>
 <div id="content">
 {% include './template/header.html' %}
-<div class="swiper-container" id="swiper">
-    <div class="swiper-wrapper"style="background-image: url(http://image.prodrone-tech.com/gdulife/banner4.jpg); width: 375px;" data-swiper-slide-index="3"></div>
-	        <div class="swiper-slide swiper-slide-prev" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner1.jpg); width: 375px;" data-swiper-slide-index="0">
-	        	<ul class="first-infor">
-	        		<li class="join-gdu">加入GDU+</li>
-	        		<li class="new-world">成为新世界的探险家</li>
-	        		<li class="start">全新的视觉盛宴 即将为你开启</li>
-	        	</ul>
-	        </div>
-	        <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner2.jpg); width: 375px;" data-swiper-slide-index="1"></div>
-	        <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner3.jpg); width: 375px;" data-swiper-slide-index="2"></div>
-	        <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner4.jpg); width: 375px;" data-swiper-slide-index="3"></div>
+  <div class="swiper-container" id="swiper">
+    <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner1.jpg);">
+      <ul class="first-infor">
+        <li class="join-gdu">加入GDU+</li>
+        <li class="new-world">成为新世界的探险家</li>
+        <li class="start">全新的视觉盛宴 即将为你开启</li>
+      </ul>
+    </div>
+    <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner2.jpg)"></div>
+    <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner3.jpg)"></div>
+    <div class="swiper-slide" style="background-image: url(http://image.prodrone-tech.com/gdulife/banner4.jpg)"></div>
     <div class="swiper-pagination"></div>
-</div>
+  </div>  
 <h3 class="title">
-  <img class="rect" src="/static/gdu_mobile/dist/image/rect.png">
+  <img class="rect" src="dist/image/rect.png">
   <span class="officel">官方视频</span>
   <a href="{:url('/gduweb/index/videos')}">
     <span class="to-more">更多</span>
-    <img class="more" src="/static/gdu_mobile/dist/image/more.png">
+    <img class="more" src="dist/image/more.png">
   </a>
 </h3>
 <ul class="video-information">	
 				
     <a href="/gduweb/index/detail/1/15">
       <li class="video-detail" style="background-image: url(http://image.prodrone-tech.com/gdulife/authority/activity3.jpg);">
-          <img class="play" src="/static/gdu_mobile/dist/image/play.png">
+          <img class="play" src="dist/image/play.png">
           <dl>
             <dt>无人机烟火表演</dt>
             <dd>246</dd>
@@ -48,7 +47,7 @@
       
     <a href="/gduweb/index/detail/1/14">
       <li class="video-detail" style="background-image: url(http://image.prodrone-tech.com/gdulife/authority/activity2.jpg);">
-          <img class="play" src="/static/gdu_mobile/dist/image/play.png">
+          <img class="play" src="dist/image/play.png">
           <dl>
             <dt>七夕飞手特辑</dt>
             <dd>209</dd>
@@ -58,7 +57,7 @@
       
     <a href="/gduweb/index/detail/1/13">
       <li class="video-detail" style="background-image: url(http://image.prodrone-tech.com/gdulife/authority/activity1.jpg);">
-          <img class="play" src="/static/gdu_mobile/dist/image/play.png">
+          <img class="play" src="dist/image/play.png">
           <dl>
             <dt>妇女节特辑</dt>
             <dd>55</dd>
@@ -67,11 +66,11 @@
     </a>
     </ul>
 <h3 class="title polite">
-  <img class="rect" src="/static/gdu_mobile/dist/image/rect.png">
+  <img class="rect" src="dist/image/rect.png">
   <span class="officel">飞行员说</span>
   <a href="{:url('/gduweb/index/articles')}">
     <span class="to-more">更多</span>
-    <img class="more" src="/static/gdu_mobile/dist/image/more.png">
+    <img class="more" src="dist/image/more.png">
   </a>
 </h3>
 <ul class="article-information">
@@ -148,7 +147,7 @@
 </ul>
 <div class="mask-layer" id="mask"></div>
 </div>
-<script type="text/javascript" src="/static/gdu_mobile/dist/swiper/swiper.min.js"></script>
+<script src="dist/js/swiper.min.js"></script>
 <script>    
 var content = $_id("#content"),
   nav = $_id("#nav"),

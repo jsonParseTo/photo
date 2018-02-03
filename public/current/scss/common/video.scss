@@ -1,0 +1,65 @@
+// ------------------------video information-------------
+.video-detail {
+	position: relative;
+	width: 100%;
+	padding-top: 56%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	.play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+	&>a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10;
+	}
+	dl {		
+		display:flex;
+		display: -webkit-flex;
+    	align-items: center;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 10px 16px 10px 16px;
+		background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0,0.7));
+		color: #FFF; 		
+		dt {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			flex: 1;
+			height: 22px;
+			padding-right: 20px;
+			font-size: 15px;
+		}
+		dd {
+			width: 20px;
+			padding-left: 35px;
+			font-size: 12px;
+			background: url(/dist/image/eye2.png) left center no-repeat;
+		}
+	}
+}
+@media screen and (max-width: 414px){	
+	.play {
+		width: 75px;
+		height: 55px;
+		margin-top: -38px;
+		margin-left: -28px;
+	}
+}
+@media screen and (min-width: 415px){
+	.play {
+		width: 120px;
+		height: 88px;
+		margin-top: -60px;
+		margin-left: -44px;
+	}
+}

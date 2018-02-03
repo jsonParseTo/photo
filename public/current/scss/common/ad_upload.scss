@@ -1,0 +1,37 @@
+body {
+	padding-bottom: 53px;
+}
+.add { padding: 10px 0 10px 0; background-color: #EEE; }
+.add-main { height: 205px; background: url("/static/image/mobile/picture.png") center center no-repeat; background-size: cover; color: #FFF; }
+.add-main a { display: block; width: 100px; margin: 0 0 0 16px; }
+.gdu-pro { padding: 50px 0 0 16px; font-size: 20px; }
+.unfold { padding: 10px 0 18px 16px; font-size: 10px; }
+.add p { width: 100px; line-height: 32px; border-radius: 3px; background-color: #EF4E22; color: #FFF; text-align: center; }
+.fix { box-sizing: border-box; position: fixed; left: 0; right: 0; bottom: 0; height: 53px; padding: 6px 16px 7px 16px; background-color: #F7F7F7; }
+.fix-pic { float: left; }
+.fix-pic img { display: block; width: 40px; height: 40px;border-radius: 12px; }
+.fix-gdu { float: left; line-height: 40px; padding: 0 0 0 20px; font-size: 16px; color: #262626; }
+.fix-get { float: right; width: 90px; line-height: 30px; border: solid 1px #EF4E22; margin: 4px 0 0 0; text-align: center; border-radius: 3px; }
+.fix-get a { display: block;color: #EF4E22; }
+@media screen and (max-width: 414px) {
+	.gdu-pro {
+		font-size: 20px;
+	}
+	.unfold {
+		font-size: 10px;
+	}
+	.learn-more a{
+		line-height: 32px;
+	}
+}
+@media screen and (min-width: 415px) {
+	.gdu-pro {
+		font-size: 25px;
+	}
+	.unfold {
+		font-size: 15px;
+	}
+	.learn-more a{
+		line-height: 32px;
+	}
+}

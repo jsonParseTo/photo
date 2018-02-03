@@ -1,0 +1,18 @@
+.toast {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	padding: 6px 10px;
+	margin-left: -35px;
+	margin-top: -16px;
+	border-radius: 5px;
+	font-size: 12px;
+	transition: all .1s ease-in;
+	background-color: #999;
+	pointer-events: none;
+	color: #FFF;
+}
+.toast-show {
+	opacity: .8;
+}

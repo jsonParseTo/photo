@@ -15,7 +15,7 @@ var swig = require('swig')
 app.set('view engine', 'html');
 app.set('views', __dirname + '/views')
 app.engine('html', swig.renderFile)
-app.use(favicon(__dirname + '/public/image/favicon.ico'))
+app.use(favicon(__dirname + '/public/dist/image/favicon.ico'))
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))

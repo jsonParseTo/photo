@@ -3,18 +3,14 @@
 		<h1 class="hanburger" id="nav"></h1>
 		<div class="logo-title">[title]</div>
 		<!-- {if empty($Think.session.uid)} -->
-			<a href="{:url('/gduweb/user/login')}">
+			<!-- <a href="{:url('/gduweb/user/login')}">
 				<img class="avatar" src="/static/gdu_mobile/dist/image/logout.png">
-			</a>
+			</a> -->
 		<!-- {else /} -->
-			<!-- <a href="{:url('/gduweb/user/profile')}">
-				{if empty($Think.session.avatar)}
-					<img class="avatar" src="/static/gdu_mobile/dist/image/default.png">
-				{else /}
-					<img class="avatar" src="{$Think.session.avatar}">
-				{/if}
+			<a href="{:url('/gduweb/user/profile')}">
+				<img class="avatar" src="/dist/image/default.png">
+				<!-- <img class="avatar" src="{$Think.session.avatar}"> -->
 			</a>
-		{/if} -->
 		<ul class="tapBar" id="tapBar">
       <li><a href="{:url('/gduweb/index/index')}">首页</a></li>
 			<li><a href="{:url('/gduweb/index/topics')}">作品</a></li>
