@@ -1,9 +1,11 @@
 var gulp = require('gulp')
 var sass = require('gulp-sass')
 var uglify = require('gulp-uglify')
+var wait = require('gulp-wait')
 gulp.task('scss', () => {
     console.log('change scss')
     gulp.src('public/current/scss/*.scss')
+        .pipe(wait(1000))
         .pipe(sass())
         .pipe(gulp.dest('public/dist/css'))
 })

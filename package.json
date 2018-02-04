@@ -12,13 +12,14 @@
     "express": "~4.15.2",
     "mongodb": "^2.2.33",
     "morgan": "~1.8.1",
-    "nodemon": "^1.14.11",
+    "nodemon": "^1.14.12",
     "serve-favicon": "~2.4.2",
     "swig": "^1.4.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "gulp-wait": "0.0.2"
   }
 }

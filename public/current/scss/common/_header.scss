@@ -1,0 +1,91 @@
+$time: .3s;
+$border: #E8E8E8;
+body {
+	padding:45px 0 0 0;
+}
+.show {
+	.hanburger {
+		height: 18px;
+		background-position: 0 -17px;
+	}	
+	.tapBar {
+		height: 120px;		
+	}
+	.mask-layer {
+		display: block;
+	}
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	display: flex;
+	display: -webkit-flex;
+	padding: 8px 16px 8px 16px;
+	border-bottom: solid 1px #E8E8E8;
+	background-color: #FFF;
+	border-bottom: solid 1px #E8E8E8;
+	.hanburger {
+		width: 25px;
+		height: 17px;
+		-webkit-transform: translateY(6px);
+		transform: translateY(6px);
+		background-image: url(/dist/image/hanburger.png);
+		background-repeat: no-repeat;
+		background-position: 0 0;		
+	}	
+	.logo {
+		width: 82px;
+		height: 12px;
+	}
+	.logo-title {
+		flex: 1;
+		line-height: 28px;
+		font-size: 18px;
+		color: #EF4E22;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+	.avatar {
+		display: block;
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+	}
+	.tapBar {
+		position: absolute;
+		top: 45px;
+		left: 0;
+		right: 0;
+		height: .1px;
+		overflow: hidden;
+		background-color: #FFF;
+		-webkit-transition: height $time ease-in;
+		transition: height $time ease-in;
+		li {
+			line-height: 40px;
+			padding: 0 16px 0 16px;
+			&:not(:last-child) a{
+				border-bottom: solid 1px $border;
+			}
+			a {
+				display: block;
+				font-size: 17px;
+				color: #CED1BD;
+				text-align: center;			
+			}
+		}
+	}
+}
+.mask-layer {
+	position: fixed;
+	z-index: 500;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	background-color: rgba(0,0,0,.2);
+}
